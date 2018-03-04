@@ -1,0 +1,82 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    tools:context="com.proyecto.enpro.enpro.MainActivity">
+
+    <LinearLayout
+        android:alpha="0.32"
+        android:background="#ff6600"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"/>
+
+    <LinearLayout
+        android:orientation="vertical"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+        <LinearLayout
+            android:layout_marginTop="25dp"
+            android:gravity="center"
+            android:layout_width="match_parent"
+            android:layout_height="0dp"
+            android:layout_weight="1">
+            <ImageView
+                android:layout_gravity="center_vertical"
+                android:src="@drawable/log"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"/>
+        </LinearLayout>
+
+        <LinearLayout
+            android:gravity="center_vertical"
+            android:orientation="vertical"
+            android:padding="25dp"
+            android:layout_width="match_parent"
+            android:layout_height="0dp"
+            android:layout_weight="1">
+
+            <EditText
+                android:id="@+id/codigo"
+                android:singleLine="true"
+                android:maxLines="1"
+                android:background="@drawable/style_edit_text"
+                android:padding="18dp"
+                android:drawableLeft="@drawable/ic_https_black_24dp"
+                android:drawablePadding="15dp"
+                android:hint="@string/peticion_codigo"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content" />
+
+            <Button
+                android:layout_gravity="center_horizontal"
+                android:background="@drawable/style_button"
+                android:layout_marginTop="20dp"
+                android:text="@string/entrar"
+                android:paddingLeft="80dp"
+                android:paddingRight="80dp"
+                android:onClick="sendLogin"
+                android:textColor="@color/colorAccent"
+                android:layout_width="230dp"
+                android:layout_height="wrap_content" />
+
+            <Button
+                android:layout_gravity="center_horizontal"
+                android:background="@drawable/style_button"
+                android:layout_marginTop="10dp"
+                android:text="@string/registrarse"
+                android:paddingLeft="50dp"
+                android:paddingRight="50dp"
+                android:onClick="sendForm"
+                android:textColor="@color/colorAccent"
+                android:layout_width="230dp"
+                android:layout_height="wrap_content" />
+
+        </LinearLayout>
+
+    </LinearLayout>
+
+</RelativeLayout>

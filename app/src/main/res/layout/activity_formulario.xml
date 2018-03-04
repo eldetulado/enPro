@@ -1,0 +1,141 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context="com.proyecto.enpro.enpro.FormularioActivity">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+
+        <ImageView
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:scaleType="centerCrop"
+            android:src="@drawable/chicos_titulados" />
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:padding="20dp">
+
+        <ScrollView
+            android:layout_width="match_parent"
+            android:layout_height="match_parent">
+
+            <LinearLayout
+                android:layout_gravity="center_vertical"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:background="@drawable/style_form"
+                android:orientation="vertical"
+                android:padding="25dp">
+
+                <TextView
+                    android:layout_gravity="center_horizontal"
+                    android:textColor="@color/colorPrimary"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:gravity="center_horizontal"
+                    android:text="@string/registro"
+                    android:textSize="@dimen/dimen_text_title"
+                    android:textStyle="bold" />
+
+                <View
+                    android:layout_width="match_parent"
+                    android:layout_height="2dp"
+                    android:layout_marginBottom="10dp"
+                    android:layout_marginTop="10dp"
+                    android:background="@color/colorPrimary" />
+
+                <EditText
+                    android:maxLines="1"
+                    android:singleLine="true"
+                    android:backgroundTint="#7b7676"
+                    android:inputType="textCapWords"
+                    android:id="@+id/nombre"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:drawablePadding="15dp"
+                    android:hint="@string/nombre"
+                    android:padding="15dp" />
+
+                <EditText
+                    android:maxLines="1"
+                    android:singleLine="true"
+                    android:inputType="textCapWords"
+                    android:backgroundTint="#7b7676"
+                    android:id="@+id/apelido"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:drawablePadding="15dp"
+                    android:hint="@string/apellido"
+                    android:padding="15dp" />
+
+                <EditText
+                    android:maxLines="1"
+                    android:inputType="textCapWords"
+                    android:singleLine="true"
+                    android:backgroundTint="#7b7676"
+                    android:id="@+id/colegio"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:drawablePadding="15dp"
+                    android:hint="@string/colegio"
+                    android:padding="15dp" />
+
+                <RadioGroup
+                    android:padding="10dp"
+                    android:id="@+id/contenedorSexo"
+                    android:orientation="horizontal"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content">
+
+                    <RadioButton
+                        android:id="@+id/Masculino"
+                        android:text="Masculino"
+                        android:layout_width="0dp"
+                        android:layout_weight="1"
+                        android:layout_height="wrap_content" />
+
+                    <RadioButton
+                        android:id="@+id/Femenino"
+                        android:text="Femenino"
+                        android:layout_width="0dp"
+                        android:layout_weight="1"
+                        android:layout_height="wrap_content" />
+                </RadioGroup>
+
+                <EditText
+                    android:maxLines="1"
+                    android:singleLine="true"
+                    android:backgroundTint="#7b7676"
+                    android:id="@+id/fnac"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:onClick="mostrar"
+                    android:focusable="false"
+                    android:clickable="true"
+                    android:inputType="date"
+                    android:hint="@string/fecha_de_nacimiento"
+                    android:padding="15dp" />
+
+                <Button
+                    android:layout_gravity="center_horizontal"
+                    android:background="@drawable/style_button"
+                    android:layout_marginTop="25dp"
+                    android:text="@string/registrarse"
+                    android:paddingLeft="80dp"
+                    android:paddingRight="80dp"
+                    android:onClick="sendData"
+                    android:textColor="@color/colorAccent"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content" />
+
+            </LinearLayout>
+        </ScrollView>
+    </LinearLayout>
+</RelativeLayout>

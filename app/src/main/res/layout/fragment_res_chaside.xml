@@ -1,0 +1,108 @@
+<RelativeLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context="com.proyecto.enpro.enpro.fragmentos.ResChasideFragment">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+
+        <ImageView
+            android:src="@drawable/cereb"
+            android:scaleType="centerCrop"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent" />
+    </LinearLayout>
+
+    <LinearLayout
+        android:background="#46B361"
+        android:alpha="0.85"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"/>
+
+    <ScrollView
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+
+        <LinearLayout
+            android:padding="16dp"
+            android:orientation="vertical"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content">
+
+            <TextView
+                android:textColor="#fff"
+                android:text="@string/resultados_del_primer_test"
+                android:textSize="@dimen/dimen_text_title"
+                android:textStyle="bold"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content" />
+
+            <TextView
+                android:id="@+id/textoSaludo"
+                android:textColor="#fff"
+                android:layout_marginTop="20dp"
+                android:textSize="@dimen/dimen_text"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content" />
+
+            <TextView
+                android:textColor="#fff"
+                android:layout_marginStart="10dp"
+                android:textStyle="bold"
+                android:id="@+id/tituloIntereses"
+                android:layout_marginTop="20dp"
+                android:textSize="@dimen/dimen_text"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content" />
+
+            <TextView
+                android:textColor="#fff"
+                android:textSize="@dimen/dimen_text"
+                android:layout_marginStart="10dp"
+                android:layout_marginTop="8dp"
+                android:id="@+id/listaIntereses"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"/>
+
+            <TextView
+                android:id="@+id/parrafoAptitudes"
+                android:textColor="#fff"
+                android:layout_marginTop="20dp"
+                android:textSize="@dimen/dimen_text"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content" />
+
+            <TextView
+                android:textColor="#fff"
+                android:layout_marginStart="10dp"
+                android:id="@+id/tituloAptitudes"
+                android:textStyle="bold"
+                android:layout_marginTop="20dp"
+                android:textSize="@dimen/dimen_text"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content" />
+
+            <TextView
+                android:textColor="#fff"
+                android:textSize="@dimen/dimen_text"
+                android:layout_marginStart="10dp"
+                android:layout_marginTop="8dp"
+                android:id="@+id/listaAptitudes"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"/>
+
+            <TextView
+                android:textColor="#fff"
+                android:textSize="@dimen/dimen_text"
+                android:layout_marginStart="10dp"
+                android:layout_marginTop="8dp"
+                android:text="gracias por realizar el test."
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"/>
+        </LinearLayout>
+    </ScrollView>
+
+</RelativeLayout>

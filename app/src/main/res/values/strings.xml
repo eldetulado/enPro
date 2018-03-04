@@ -1,0 +1,24 @@
+<resources>
+    <string name="app_name">EnPRO</string>
+    <string name="peticion_codigo">Codigo de Ingreso</string>
+    <string name="entrar">entrar</string>
+    <string name="registrarse"><u>Registrarse</u></string>
+    <string name="registro">Registro</string>
+    <string name="nombre">Nombre</string>
+    <string name="apellido">Apellido</string>
+    <string name="colegio">Colegio</string>
+    <string name="yyyy">YYYY</string>
+    <string name="mm">MM</string>
+    <string name="dd">DD</string>
+    <string name="fecha_de_nacimiento">Fecha de Nacimiento</string>
+    <string name="title_activity_main2">EnPro</string>
+
+    <string name="navigation_drawer_open">Open navigation drawer</string>
+    <string name="navigation_drawer_close">Close navigation drawer</string>
+
+    <string name="action_settings">Settings</string>
+
+    <!-- TODO: Remove or change this placeholder text -->
+    <string name="hello_blank_fragment">Hello blank fragment</string>
+    <string name="resultados_del_primer_test">RESULTADOS DEL PRIMER TEST</string>
+</resources>

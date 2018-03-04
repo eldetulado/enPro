@@ -1,0 +1,21 @@
+<?xml version="1.0" encoding="utf-8"?>
+<menu xmlns:android="http://schemas.android.com/apk/res/android">
+
+    <item
+        android:id="@+id/test"
+        android:icon="@drawable/ic_book_black_24dp"
+        android:title="Test's" />
+    <item
+        android:id="@+id/resultados"
+        android:icon="@drawable/ic_done_black_24dp"
+        android:title="Resultados" />
+    <item
+        android:id="@+id/informacion"
+        android:icon="@drawable/ic_person_black_24dp"
+        android:title="Informacion" />
+    <item
+        android:id="@+id/acerca"
+        android:icon="@drawable/ic_menu_send"
+        android:title="Acerca de Nosotros" />
+
+</menu>
